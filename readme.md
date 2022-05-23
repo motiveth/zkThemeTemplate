@@ -16,7 +16,7 @@ npm install
 ## build jar file
 `mvn clean package`
 
-The jar file will be `target/___THEME_NAME___.jar`
+The jar file will be `target/breezeeia.jar`
 
 # Development
 
@@ -34,9 +34,9 @@ in a separate console:
 ## wrap up
 update less-files with text editor, save file -\> auto zkless compile -\> browser will reload style sheet zk.wcs
 
-# How to use `___THEME_NAME___.jar`:
+# How to use `breezeeia.jar`:
 
-1. Put `___THEME_NAME___.jar` in `WEB-INF/lib`, then `___THEME_NAME___.jar`
+1. Put `breezeeia.jar` in `WEB-INF/lib`, then `breezeeia.jar`
     will become your default theme if there is no other theme.
 
 2. Now you can also dynamically switch between different themes by
@@ -46,13 +46,13 @@ update less-files with text editor, save file -\> auto zkless compile -\> browse
         <!-- in WEB-INF/zk.xml -->
         <library-property> 
             <name>org.zkoss.theme.preferred</name>
-            <value>___THEME_NAME___</value>
+            <value>breezeeia</value>
         </library-property> 
      ```
 
 
   - Use cookie to switch theme, add a cookie
     ```
-    zktheme=___THEME_NAME___
+    zktheme=breezeeia
     ```
 It does not require a server restart, but user has to refresh the browser.
